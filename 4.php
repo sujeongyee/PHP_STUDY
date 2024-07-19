@@ -146,15 +146,15 @@
 
 // print_r($fruits);
 
-$cars = array (
-  array("볼보",22,10),
-  array("산타페",25,4),
-  array("아우디",12,11),
-);
+// $cars = array (
+//   array("볼보",22,10),
+//   array("산타페",25,4),
+//   array("아우디",12,11),
+// );
 
-print_r($cars);
+// print_r($cars);
 
-echo "<br><h3>". $cars[1][0]. "의 재고는 ". $cars[1][1]. "개여 </h3><br>";
+// echo "<br><h3>". $cars[1][0]. "의 재고는 ". $cars[1][1]. "개여 </h3><br>";
 
 // foreach($cars AS $car){
 //   foreach($car AS $carDetail) {
@@ -162,20 +162,37 @@ echo "<br><h3>". $cars[1][0]. "의 재고는 ". $cars[1][1]. "개여 </h3><br>";
 //   }
 // }
 
-echo '<table border="1">
-<tr>
-<th>차종</th>
-<th>재고량</th>
-<th>판매량</th>
-</tr>';
+// echo '<table border="1">
+// <tr>
+// <th>차종</th>
+// <th>재고량</th>
+// <th>판매량</th>
+// </tr>';
 
-for($i = 0 ; $i < sizeof($cars) ; $i++){
-  echo "<tr>";
-  for($j = 0 ; $j < sizeof($cars[$i]) ; $j++) {
-    echo "<td>". $cars[$i][$j] ."</td>";
-  }
-  echo "</tr>";
-}
-echo "</table>";
+// for($i = 0 ; $i < sizeof($cars) ; $i++){
+//   echo "<tr>";
+//   for($j = 0 ; $j < sizeof($cars[$i]) ; $j++) {
+//     echo "<td>". $cars[$i][$j] ."</td>";
+//   }
+//   echo "</tr>";
+// }
+// echo "</table>";
+
+// $fruits = array("사과","배","귤","수박","토마토");
+
+// rsort($fruits);
+
+// print_r($fruits);
+
+$age = array(
+  "박수정" => 28,
+  "박준명" => 30,
+  "최주영" => 31,
+  "박민정" => 27,
+);
+
+krsort($age);
+
+print_r($age);
 
 ?>
