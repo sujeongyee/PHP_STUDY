@@ -7,7 +7,7 @@
 </head>
 <body>
 
-<form action="upload.php" method="post" enctype="multipart/form-data">
+<form action="basic/upload.php" method="post" enctype="multipart/form-data">
 
    <input type="file" name="ufile">
    <button>업로드</button>
