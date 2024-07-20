@@ -15,9 +15,8 @@
 
 // 해당 문자열 찾기
 
-$string = "ABCDEFGHIJKLMNOPQRSTUVWXYZ
-abcdefghijklmnopqrstuvwxyz 0123456789";
-$pattern = '/[A-Ca-f]/';
+$string = "Monday Tuesday Friday";
+$pattern = '/..(esd|id)ay/';
 $replacement = "!";
 
 echo "<h3>before:</h3>";
