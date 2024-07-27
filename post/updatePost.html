@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>글 수정</title>
+  <script type="text/javascript" src="https://code.jquery.com/jquery-latest.min.js"></script>
+  <link rel="stylesheet" href="/css/board.css">
+  <script src="/js/main.js"></script>
+  <script src="/js/updatePost.js"></script> 
+</head>
+<body>
+  <div id="header"></div>
+  <div id="menu"></div>
+  <div class="container">
+    <div class="postUpdate">
+      <form id="updateForm" class="update-form" style="width:100%">
+        <input type="hidden" name="postNo" id="postNo">
+        <table class="write-table">
+          <tr>
+            <th>제목</th>
+            <td><input type="text" class="post-title" name="title" id="postTitle" placeholder="제목을 입력해주세요"></td>
+          </tr>
+          <tr>
+            <th>작성자</th>
+            <td><input type="text" class="post-writer" name="writer" id="postWriter" placeholder="작성자 이름을 입력해 주세요"></td>
+          </tr>
+          <tr>
+            <th>내용</th>
+            <td><textarea class="post-content" name="content" id="postContent" placeholder="내용을 입력해주세요"></textarea></td>
+          </tr>
+        </table>
+      </form>
+      <button class="update-btn" type="button">수정</button>
+    </div>
+  </div>
+  <div id="footer"></div>
+</body>
+</html>
